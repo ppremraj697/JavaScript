@@ -26,31 +26,52 @@ console.log("Return value without return statement", addSum(3));
 
 //CONDITIONALS AND COMPARISION OPERATORS
 
-console.log(1 == 1);//true
-console.log(1 == 2);//false
-console.log(1 == "1");//true
-console.log(4 === 4);//true
-console.log(4 === "4");//false
-console.log(4 != 5);//true
-console.log(4 != 4);//false
-console.log(4 != "5");//true
-console.log(4 != "4");//false
-console.log(4 !== 5);//true
-console.log(4 !== 4);//false
-console.log(4 !== "5");//true
-console.log(4 !== "4");//false
-console.log(4 > 5);//false
-console.log(4 >= 5);//false
-console.log(4 >= "4");//true
-console.log("5" <= 6);//true
+// console.log(1 == 1);//true
+// console.log(1 == 2);//false
+// console.log(1 == "1");//true
+// console.log(4 === 4);//true
+// console.log(4 === "4");//false
+// console.log(4 != 5);//true
+// console.log(4 != 4);//false
+// console.log(4 != "5");//true
+// console.log(4 != "4");//false
+// console.log(4 !== 5);//true
+// console.log(4 !== 4);//false
+// console.log(4 !== "5");//true
+// console.log(4 !== "4");//false
+// console.log(4 > 5);//false
+// console.log(4 >= 5);//false
+// console.log(4 >= "4");//true
+// console.log("5" <= 6);//true
 
 const num = 70;
 
-//logical AND(&&)
-if (num > 5 && num < 10) {
-    return console.log("Yes");
+function checkNum(num) {
+    //Logical AND(&&)
+    if (num > 5 && num < 10) {
+        return "Between 5 and 10";
+    }
+    //Logical OR(||)
+    else if (num < 5 || num > 10) {
+        return "Less than 5 or greater than 10";
+    }
 }
-else {
-    return console.log("No");
+
+console.log(checkNum(100));
+
+//Switch Statement
+
+const val = 3;
+
+switch (val) {
+    case 1:
+        console.log("This is one");
+        break;
+    case 2:
+        console.log("This is two");
+        break;
+    default:
+        console.log("This is default case");
+        break;
 }
 
