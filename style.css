@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 40px;
-    background: radial-gradient(circle, rgba(151,86,237,1) 0%, rgba(24,23,73,1) 100%);
+    background: radial-gradient(circle, rgba(151, 86, 237, 1) 0%, rgba(24, 23, 73, 1) 100%);
     justify-content: space-evenly;
 }
 
@@ -74,6 +74,24 @@ body {
     align-items: center;
 }
 
-.bg-img-text h1{
+.bg-img-text h1 {
+    text-align: center;
+}
+
+#colorAnimationJS {
+    height: 350px;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#colorAnimationJS:hover {
+    color: white;
+}
+
+#colorAnimationJS h1 {
     text-align: center;
 }
