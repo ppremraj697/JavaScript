@@ -1,7 +1,7 @@
 //CLOSURE IN JS : A CLOSURE in JS gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
 
 
-//------------------------------------------------------LEXICAL SCOPING-------------------------------------------------------------------
+//------------------------------------------------------LEXICAL SCOPING-----------------------------------------------------------------
 
 function outer() {
 
@@ -49,3 +49,41 @@ let myName = myFxn();
 myName();
 
 
+// -------------------------------------------------------CLOSURE EXAMPLE---------------------------------------------------------------
+
+let btns = document.getElementsByClassName("btn");
+
+// let btnPressed = e => {
+
+//     let currBtn = e.target.id;
+
+//     let box = document.getElementById("closureImplementation");
+
+//     box.addEventListener("click", function () {
+//         box.style.backgroundColor = currBtn;
+//     })
+// }
+
+for (let btn of btns) {
+    // btn.addEventListener("click", btnPressed);
+
+    // btn.addEventListener("click", (e) => {
+    //     const result = clickHandler(e)
+    //     result();
+    // });
+
+    btn.addEventListener("click", function(e){
+        const result = clickHandler(e)
+        result();
+    });
+}
+
+function clickHandler(e) {
+
+    let currBtn = e.target.id;
+
+    return function () {
+        let box = document.getElementById("closureImplementation");
+        box.style.backgroundColor = currBtn;
+    }
+}

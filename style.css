@@ -18,6 +18,10 @@ body {
     justify-content: space-evenly;
 }
 
+#container div{
+    margin: 20px;
+}
+
 .self-img {
     height: 350px;
     width: 350px;
@@ -63,7 +67,7 @@ body {
     border-radius: 10px;
     height: 350px;
     width: 350px;
-    background-image: url(https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D);
+    background-image: url(https://images.unsplash.com/photo-1704739300067-0cfbf8eb8bd3?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
     background-position: center;
     background-clip: text;
@@ -94,4 +98,21 @@ body {
 
 #colorAnimationJS h1 {
     text-align: center;
+}
+
+#closureImplementation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 350px;
+    width: 350px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#closureImplementation button{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
 }
