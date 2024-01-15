@@ -13,7 +13,6 @@ var student = {
     "branch name": "Computer Engineering",
     div: "A",
     rollNo: 20166,
-    isBrave: true,
     location: "Pune",
     hasGF: null,
     //method
@@ -22,7 +21,23 @@ var student = {
     }
 }
 
+//Adding new field and method to object
+student.isBrave = true;
+student.detailedBio = function () {
+    console.log(this.name, " is student at ", this.college);
+}
+
+
 //Accessing the object's field
 student.displayName();
 console.log(student.college);
 console.log(student["branch name"]);
+// console.log(rollNumber); //--------------------> ERROR: Not Defined
+const rollNumber = "rollNo";
+console.log(student[rollNumber]);
+
+
+//Methods on Objects
+console.log(student.hasOwnProperty("location"))
+console.log(Object.keys(student));
+console.log(Object.values(student));
