@@ -45,6 +45,26 @@
             <div>Neumorphism</div>
         </div>
 
+        <div id="eventBubbling">
+            <p>Event Bubbling <br> Div1</p>
+            <div class="div1" id="ebDiv1">
+                <p>Div2</p>
+                <div class="div2" id="ebDiv2">
+                    <p>Div3 - Click Here</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="eventCapturing">
+            <p> Event Capturing <br> Div4</p>
+            <div class="div1" id="ecDiv1">
+                <p>Div5</p>
+                <div class="div2" id="ecDiv2">
+                    <p>Div6 - Click Here</p>
+                </div>
+            </div>
+        </div>
+
 
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
@@ -52,6 +72,7 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="script.js"></script>
         <script src="closure.js"></script>
+        <script src="eventPropagation.js"></script>
 </body>
 
 </html>
