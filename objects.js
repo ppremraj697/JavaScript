@@ -2,6 +2,8 @@
 
 // An object is a collection of related data or functionality.These usually consist of several variables and functions(which are called properties and methods when they are inside objects).
 
+// All JavaScript objects have a toString() method.
+
 var newObj = {} //blank object
 
 //Syntax of Object
