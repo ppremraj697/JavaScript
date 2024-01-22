@@ -4,25 +4,49 @@
 // JS array-copy operations create shallow copies(point to the same underlying values)
 // Internally, JS arrays are stored as Objects
 
-var arr = ["Premraj", 20166, "DYPIEMR", 1, 2, "Pune"];
+//MODERN JS ARRAY METHODS
+
+const arr1 = [10, 25, 3, 14, 55, 36, 77, 38]
+
+//forEach
+arr1.forEach(function (val, index) {
+    console.log(val + index)
+})
+
+//map
+const mappedArray = arr1.map((value, index) => {
+    return value * index;
+})
+console.log(mappedArray)
+
+//filter
+const filteredArray = arr1.filter((val) => {
+    //filters even elements from array
+    return !(val % 2);
+})
+console.log(filteredArray)
+
+//reduce
+// const reducedArrayResult = arr1.reduce((h1,h2,h3,h4)=>{
+//     console.log(h1,h2,h3,h4);
+//     return h1+h2;
+// })
+
+//ARRAY METHODS & PROPERTIES
+var arr = ["Patil", "Premraj", 20166, "DYPIEMR", 1, 2, "Pune"];
 
 arr.pop();//Delete last element : Returns Deleted element
 arr.push(5);//Insert in last : Returns new array length
 arr.unshift();//Remove first element : : Returns Deleted element
 arr.shift("Good Boy");//Insert in begineeing : Returns new array length
 
-console.log(arr);
-
 // arr[-1] = "Premraj";//Negative Indexed Array in JS : Not Suggested
 
-//ARRAY METHODS & PROPERTIES
-
-console.log(arr.length);
-console.log(arr.at(-2));//Accessing 2nd last element
-console.log(arr[1]);
-
-console.log(arr.toString());//Converts an array to a string of comma separated array values.
-console.log(arr.join(" * "));//Joins all array elements into a string with mentioned seperator.
+// console.log(arr.length);
+// console.log(arr.at(-2));//Accessing 2nd last element
+// console.log(arr[1]);
+// console.log(arr.toString());//Converts an array to a string of comma separated array values.
+// console.log(arr.join(" * "));//Joins all array elements into a string with mentioned seperator.
 
 // Using delete() leaves undefined holes in the array. SYNTAX : delete arr[0]
 // Use pop() or shift() instead.

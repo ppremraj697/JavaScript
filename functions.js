@@ -16,8 +16,8 @@ setTimeout(function () {
 }, 3000)
 
 //Arrow Function
-const add = (a, b) => a + b;
-console.log(add(4, 8));
+const multiply = (a, b) => a * b;
+console.log(multiply(4, 8));
 
 //FIRST CLASS FUNCTIONS
 // Assigning a function to a variable
@@ -27,6 +27,19 @@ console.log(add(4, 8));
 
 //HIGHER ORDER FUNCTIONS
 // A function that returns a function or takes other functions as arguments is called a higher-order function.
+function add(val1, val2) {
+    return displayResult(val1 + val2);
+}
+
+function displayResult(sum) {
+    console.log(sum)
+}
+
+let sum = add(4, 5);
 
 //CALLBACK FUNCTION
 // The function that we pass as an argument to another function is called a callback function.
+const arr = [1,2,3]
+arr.forEach((val, index)=>{
+    console.log(val*index);
+})
