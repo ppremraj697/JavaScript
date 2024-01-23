@@ -27,10 +27,16 @@ const filteredArray = arr1.filter((val) => {
 console.log(filteredArray)
 
 //reduce
-// const reducedArrayResult = arr1.reduce((h1,h2,h3,h4)=>{
-//     console.log(h1,h2,h3,h4);
-//     return h1+h2;
+const reducedArrayResult = arr1.reduce((accumulator, currentElement, currentIndex, array) => {
+    console.log(accumulator, currentElement, currentIndex, array);
+    return accumulator + currentElement;
+}, 0)
+console.log(reducedArrayResult);
+// const emptyArr = []
+// const result = emptyArr.reduce((acc, curr)=>{
+//     return acc+curr;
 // })
+// console.log(result);--------- TYPE ERROR without initial value
 
 //ARRAY METHODS & PROPERTIES
 var arr = ["Patil", "Premraj", 20166, "DYPIEMR", 1, 2, "Pune"];
@@ -42,11 +48,11 @@ arr.shift("Good Boy");//Insert in begineeing : Returns new array length
 
 // arr[-1] = "Premraj";//Negative Indexed Array in JS : Not Suggested
 
-// console.log(arr.length);
-// console.log(arr.at(-2));//Accessing 2nd last element
-// console.log(arr[1]);
-// console.log(arr.toString());//Converts an array to a string of comma separated array values.
-// console.log(arr.join(" * "));//Joins all array elements into a string with mentioned seperator.
+console.log(arr.length);
+console.log(arr.at(-2));//Accessing 2nd last element
+console.log(arr[1]);
+console.log(arr.toString());//Converts an array to a string of comma separated array values.
+console.log(arr.join(" * "));//Joins all array elements into a string with mentioned seperator.
 
 // Using delete() leaves undefined holes in the array. SYNTAX : delete arr[0]
 // Use pop() or shift() instead.
