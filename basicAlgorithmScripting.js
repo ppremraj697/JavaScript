@@ -45,4 +45,30 @@ function findLongestWordLength(str) {
 
     return len;
 }
-findLongestWordLength("What if we try a super-long word such as otorhinolaryngology");
+console.log(findLongestWordLength("What if we try a super-long word such as otorhinolaryngology"));
+
+//Convert Celsius to Fahrenheit
+function convertCtoF(celsius) {
+    let fahrenheit = ((9 / 5) * celsius) + 32;
+    console.log(fahrenheit)
+    return fahrenheit;
+}
+console.log(convertCtoF(30));
+
+//Return Largest Numbers in Arrays
+function largestOfNestedArr(arr) {
+
+    let mappedArr = arr.map((subArr) => {
+
+        let largestElem = Number.MIN_SAFE_INTEGER
+        for (let i = 0; i < subArr.length; i++) {
+            if (subArr[i] > largestElem) {
+                largestElem = subArr[i]
+            }
+        }
+        return largestElem;
+    })
+
+    return mappedArr;
+}
+console.log(largestOfNestedArr([[4, 150, 1, 30, 42, 58], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1], [23, 45, 21]]));
