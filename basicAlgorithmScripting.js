@@ -72,3 +72,20 @@ function largestOfNestedArr(arr) {
     return mappedArr;
 }
 console.log(largestOfNestedArr([[4, 150, 1, 30, 42, 58], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1], [23, 45, 21]]));
+
+//Repeat a String
+function repeatStringNumTimes(str, num) {
+
+    let ans = "";
+
+    if (num <= 0) {
+        return "";
+    }
+    else {
+        for (let i = 0; i < num; i++) {
+            ans += str;
+        }
+    }
+    return ans;
+}
+console.log(repeatStringNumTimes("abc", 3));
