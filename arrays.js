@@ -13,7 +13,7 @@ arr1.forEach(function (val, index) {
     console.log(val + index)
 })
 
-//map
+//map in js
 const mappedArray = arr1.map((value, index) => {
     return value * index;
 })
